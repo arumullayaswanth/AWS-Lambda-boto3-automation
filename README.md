@@ -15,7 +15,15 @@ Launch PyCharm and open your project or create a new one.
 2. Select `Settings` (or `Preferences` on macOS).
 3. In the left pane, navigate to `Project: <your_project_name>` > `Python Interpreter`.
 
+## Step 3: Install boto3
 
+
+1. Click on the **`+`** icon (Add Package) on the right side of the Python Interpreter window.
+2. In the search bar, type `boto3`.
+3. Select `boto3` from the list.
+4. Click on the `Install Package` button at the bottom.
+  
+PyCharm will install the `boto3` library and its dependencies.
 Make sure Python 3.x is installed on your machine.
 
 Check the version by running:
@@ -29,15 +37,6 @@ or
 ```bash
 python --version
 ```
-## Step 3: Install boto3
-
-
-1. Click on the **`+`** icon (Add Package) on the right side of the Python Interpreter window.
-2. In the search bar, type `boto3`.
-3. Select `boto3` from the list.
-4. Click on the `Install Package` button at the bottom.
-  
-PyCharm will install the `boto3` library and its dependencies.
 
 [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) is the AWS SDK for Python. Install it using `pip`:
 
