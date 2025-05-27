@@ -1,5 +1,6 @@
 import os
 import pymysql
+import boto3
 
 # Database settings from environment variables
 db_host = os.environ['DB_HOST']
