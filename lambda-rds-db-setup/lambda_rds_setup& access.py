@@ -21,6 +21,7 @@ def connect_to_rds():
 
 # Lambda function handler
 def lambda_handler(event, context):
+    connection = None  # Initialize the connection variable
     try:
         connection = connect_to_rds()
         with connection.cursor() as cursor:
@@ -46,12 +47,14 @@ def lambda_handler(event, context):
                 'statusCode': 200,
                 'body': f"Database '{new_db_name}' and table '{table_name}' created successfully."
             }
+
     except Exception as e:
         print("Error:", str(e))
         return {
             'statusCode': 500,
             'body': str(e)
         }
-    finally:
-        connection.close()
 
+    finally:
+        if connection:
+            connection.close()
