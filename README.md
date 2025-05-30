@@ -19,17 +19,20 @@
 
 5. 🌐 **CloudFront + Lambda Automation for Edge Location Updates**
    Note: CloudFront Lambda automation updates data inside edge locations when the developer pushes the updated changes (invalidations/updates)
+   
    [🔗 GitHub Link](https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation-project)
 
-6. 🔌 **Integrate API Gateway, Lambda, and RDS (tested via Postman)**
+7. 🔌 **Integrate API Gateway, Lambda, and RDS (tested via Postman)**
    Note: Integrate API Gateway and Lambda function and RDS, tested from the backend code deployed into Lambda function and tested to RDS by API methods using Postman tool
+   
    [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/5.lambda-rds-api-gateway)
 
-7. 💻 **Same process done with Backend EC2 combinations**  
+8. 💻 **Same process done with Backend EC2 combinations**  
    [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/4.Python-backend-testing)
 
-8. 🗄️ **Deploy App in Lambda, use API Gateway, and DynamoDB**
+9. 🗄️ **Deploy App in Lambda, use API Gateway, and DynamoDB**
     Note: Deploy an application in AWS Lambda function and configure to DynamoDB and try to access the API Gateway endpoint (frontend → backend → DynamoDB)
+   
    [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/6.lambda-dynamodb-api-gateway)
 
 
