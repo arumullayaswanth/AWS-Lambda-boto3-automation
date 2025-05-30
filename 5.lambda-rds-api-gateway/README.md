@@ -2,6 +2,16 @@
 
 This guide explains how to build a Python-based Lambda API using API Gateway to perform operations on an RDS MySQL database.
 
+
+<table style="width: 100%; margin-bottom: 20px;">
+  <tr>
+    <td align="center" style="padding: 10px; background-color: #e9f7f5; border-radius: 8px;">
+      <img src="https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation/blob/8125516f2363f5c565a0bbb0cb0d81110edaf2a3/5.lambda-rds-api-gateway/images.png" width="1000%" style="border: 2px solid #ddd; border-radius: 10px;">
+      <br><b> Lambda-RDS API Integration  architecture Project </b>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## ✅ Step 1: Set Up Your RDS Database
