@@ -1,3 +1,20 @@
+# AWS Lambda Function Use Cases
+
+1. Push logs to CloudWatch to S3 automatically  
+2. By using Lambda we have connected RDS via Private connection  
+3. Lambda Event base and schedule base  
+4. Lambda Layers for custom packages  
+5. CloudFront Lambda automation updates data inside edge locations when the developer pushes the updated changes (invalidations/updates)  
+6. Integrate API Gateway and Lambda function and RDS, tested from the backend code deployed into Lambda function and tested to RDS by API methods using Postman tool  
+7. Same process we have done through backend EC2 combinations  
+8. Deploy an application in AWS Lambda function and configure to DynamoDB and try to access the API Gateway endpoint (frontend → backend → DynamoDB)
+
+
+
+
+
+
+
 # AWS-Lambda-boto3-automation
 Automate AWS cloud operations using AWS Lambda functions powered by Boto3. This repository contains Python scripts for event-driven automation of AWS services like EC2, S3, IAM, and more, enabling scalable and efficient cloud management.
 
