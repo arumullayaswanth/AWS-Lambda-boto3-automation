@@ -1,142 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futuristic Contact Portal</title>
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       height: 100vh;
-      background-image: url('https://media.istockphoto.com/id/1367728715/vector/devops-concept-with-infinite-loop-on-abstract-technology-background.jpg?s=612x612&w=0&k=20&c=aadwZ3TQPv31Qxd_RyCwvoNNHBT1kNiaoksHtPdfKAA=');
-      background-repeat: no-repeat;
-      background-size: 100%;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
     }
 
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-      border-radius: 25px;
-      border-style: groove;
-      border-color: rgb(9, 205, 9);
-      width: 45%;
-
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1s ease-out;
     }
-    h1 {
+
+    .glass-card h2 {
       text-align: center;
-      color: #c81414;
-      margin-bottom: 20px;
-      background-color: rgb(244, 250, 154);
-      font-family: unset;
+      color: #ffffff;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
     }
 
-
-    h2 {
-      text-align: center;
-      color: #128de5;
-      margin-bottom: 20px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
     }
 
-    label {
-      display: block;
-      margin: 10px 0 5px;
-      color: #555;
-      font-size: larger;
-      font-family: cursive;
-    }
-
-    input,
-    textarea {
+    .form-group input,
+    .form-group textarea {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 15px;
-      border-color: aqua;
+      padding: 12px;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      color: #ffffff;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease-in-out;
     }
 
-    input[type="submit"] {
-      background-color: #a7386c;
-      color: #fff;
+    .form-group label {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      pointer-events: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 10px;
+      font-size: 13px;
+      color: #00ffe5;
+      background-color: #2c5364;
+      padding: 0 5px;
+      border-radius: 5px;
+    }
+
+    .glass-card button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, #00ffe5, #0099ff);
+      border: none;
+      border-radius: 12px;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
       cursor: pointer;
-      font-size: 16px; /* Increased text size for submit button */
-      text-align:center;
+      transition: 0.3s;
     }
 
-    input[type="submit"]:hover {
-      background-color: #45a049;
-        
+    .glass-card button:hover {
+      background: linear-gradient(135deg, #0099ff, #00ffe5);
     }
 
-    /* Additional styles for animation */
-    form:hover {
-      transform: scale(1);
-      border-style: groove;
-      border-color: gold;
-      
-
+    @keyframes fadeIn {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
-    
-
-    /* Additional styles for footer */
     footer {
-      margin-top: 20px;
-      font-size: 18px;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
       text-align: center;
-      color: rgb(16, 238, 116);
+      color: #aaa;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to Multicloud with Devops by Yaswanth Reddy Arumulla</h1>
+  <div class="glass-card">
+    <h2>🌐 Multicloud DevOps Registration</h2>
+    <form action="/dev" method="post">
+      <div class="form-group">
+        <input type="text" id="fname" name="fname" required placeholder=" " />
+        <label for="fname">First Name</label>
+      </div>
 
-  <form action="/dev" method="post">
-    <h2>MultiCloud devops Registration</h2>
+      <div class="form-group">
+        <input type="text" id="lname" name="lname" required placeholder=" " />
+        <label for="lname">Last Name</label>
+      </div>
 
-    <label for="fname" style="color: red;">First Name:</label>
-    <input type="text" id="fname" name="fname" required>
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder=" " />
+        <label for="email">Email</label>
+      </div>
 
-    <label for="lname" style="color: rgb(14, 46, 188);" >Last Name:</label>
-    <input type="text" id="lname" name="lname" required>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+        <label for="message">Your Message</label>
+      </div>
 
-    <label for="email" style="color: rgb(225, 19, 204);">Email ID:</label>
-    <input type="text" id="email" name="email" required>
+      <button type="submit">Submit 🚀</button>
+    </form>
+  </div>
 
-    <label for="message" style="color: rgb(209, 153, 10);" >Message:</label>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-
-   <div style="text-align: center;"><input style="width: 250px; " type="submit" value="Submit"></div> 
-  </form>
-
-  <footer>
-    Multicloud with devops by yaswanth
-  </footer>
-
-  <!-- Simple JavaScript for animation -->
-  <script>
-    const form = document.querySelector('form');
-
-    form.addEventListener('mouseover', () => {
-      form.style.transform = 'scale(1.05)';
-    });
-
-    form.addEventListener('mouseout', () => {
-      form.style.transform = 'scale(1)';
-    });
-  </script>
+  <footer>&copy; 2025 Yaswanth Reddy Arumulla — DevOps Innovation</footer>
 
 </body>
 </html>
