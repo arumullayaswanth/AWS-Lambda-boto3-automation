@@ -1,15 +1,50 @@
 # AWS Lambda Function Use Cases
 
-1. Push logs to CloudWatch to S3 automatically  
-2. By using Lambda we have connected RDS via Private connection  
-3. Lambda Event base and schedule base  
-4. Lambda Layers for custom packages  
-5. CloudFront Lambda automation updates data inside edge locations when the developer pushes the updated changes (invalidations/updates)  
-6. Integrate API Gateway and Lambda function and RDS, tested from the backend code deployed into Lambda function and tested to RDS by API methods using Postman tool  
-7. Same process we have done through backend EC2 combinations  
+1. Push logs to CloudWatch to S3 automatically
+   https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/2.Cloudwatch-to-s3-exporter
+2. By using Lambda we have connected RDS via Private connection
+   https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/3.lambda-rds-db-setup 
+3. Lambda Event base and schedule base
+   https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/2.Cloudwatch-to-s3-exporter 
+4. Lambda Layers for custom packages
+   https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/blob/master/3.lambda-rds-db-setup/README.md  
+5. CloudFront Lambda automation updates data inside edge locations when the developer pushes the updated changes (invalidations/updates)
+    https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation-project
+6. Integrate API Gateway and Lambda function and RDS, tested from the backend code deployed into Lambda function and tested to RDS by API methods using Postman tool
+    https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/5.lambda-rds-api-gateway
+7. Same process we have done through backend EC2 combinations
+    https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/4.Python-backend-testing
 8. Deploy an application in AWS Lambda function and configure to DynamoDB and try to access the API Gateway endpoint (frontend → backend → DynamoDB)
+    https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/6.lambda-dynamodb-api-gateway
 
 
+# ![AWS Lambda Logo](https://raw.githubusercontent.com/awsdocs/aws-lambda-developer-guide/main/doc_source/images/lambda.png) AWS Lambda Function Use Cases
+
+## ✅ Use Cases with Links
+
+1. 🚀 **Push logs to CloudWatch to S3 automatically**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/2.Cloudwatch-to-s3-exporter)
+
+2. 🔧 **Connect RDS via Private connection using Lambda**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/3.lambda-rds-db-setup)
+
+3. ⏰ **Lambda Event-based and Schedule-based Execution**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/2.Cloudwatch-to-s3-exporter)
+
+4. 📦 **Lambda Layers for Custom Packages**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/blob/master/3.lambda-rds-db-setup/README.md)
+
+5. 🌐 **CloudFront + Lambda Automation for Edge Location Updates**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation-project)
+
+6. 🔌 **Integrate API Gateway, Lambda, and RDS (tested via Postman)**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/5.lambda-rds-api-gateway)
+
+7. 💻 **Same process done with Backend EC2 combinations**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/4.Python-backend-testing)
+
+8. 🗄️ **Deploy App in Lambda, use API Gateway, and DynamoDB**  
+   [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/6.lambda-dynamodb-api-gateway)
 
 
 
