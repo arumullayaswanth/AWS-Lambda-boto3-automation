@@ -144,13 +144,13 @@ arn:aws:lambda:us-east-1:421954350274:layer:dblayer-1:1
 4. Click **Create API**
 
 ### Create GET Method:
-
+Click on the root resource /
 * Integration type: Lambda Function
 * Enable Lambda Proxy Integration
 * Lambda Function: `lambda-rdsapi`
 
 ### Create POST Method:
-
+Click on the root resource /
 * Integration type: Lambda Function
 * Enable Lambda Proxy Integration
 * Lambda Function: `lambda-rdsapi`
