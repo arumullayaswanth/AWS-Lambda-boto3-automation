@@ -8,7 +8,7 @@
 1. 🚀 **Push logs to CloudWatch to S3 automatically**  
    [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/2.Cloudwatch-to-s3-exporter)
 
-2. 🔧 ** By using Lambda we have connected RDS via Private connection**  
+2. 🔧 **By using Lambda we have connected RDS via Private connection**  
    [🔗 GitHub Link](https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/tree/master/3.lambda-rds-db-setup)
 
 3. ⏰ **Lambda Event-based and Schedule-based Execution**  
