@@ -1,0 +1,19 @@
+# Create DB and table before 
+
+CREATE DATABASE dev;
+USE dev;
+
+Create TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE
+);
+
+
+
+#you can test POST and GET methods through Postman
+
+{
+  "username": "veera",
+  "email": "veera@example.com"
+}
