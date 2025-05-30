@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://media.istockphoto.com/id/1367728715/vector/devops-concept-with-infinite-loop-on-abstract-technology-background.jpg?s=612x612&w=0&k=20&c=aadwZ3TQPv31Qxd_RyCwvoNNHBT1kNiaoksHtPdfKAA=');
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      border-radius: 25px;
+      border-style: groove;
+      border-color: rgb(9, 205, 9);
+      width: 45%;
+
+    }
+    h1 {
+      text-align: center;
+      color: #c81414;
+      margin-bottom: 20px;
+      background-color: rgb(244, 250, 154);
+      font-family: unset;
+    }
+
+
+    h2 {
+      text-align: center;
+      color: #128de5;
+      margin-bottom: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #555;
+      font-size: larger;
+      font-family: cursive;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      border-color: aqua;
+    }
+
+    input[type="submit"] {
+      background-color: #a7386c;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px; /* Increased text size for submit button */
+      text-align:center;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+        
+    }
+
+    /* Additional styles for animation */
+    form:hover {
+      transform: scale(1);
+      border-style: groove;
+      border-color: gold;
+      
+
+    }
+
+    
+
+    /* Additional styles for footer */
+    footer {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: rgb(16, 238, 116);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Multicloud with Devops by VEERA NareshIT</h1>
+
+  <form action="/dev" method="post">
+    <h2>MultiCloud devops Registration</h2>
+
+    <label for="fname" style="color: red;">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+
+    <label for="lname" style="color: rgb(14, 46, 188);" >Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+
+    <label for="email" style="color: rgb(225, 19, 204);">Email ID:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="message" style="color: rgb(209, 153, 10);" >Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+   <div style="text-align: center;"><input style="width: 250px; " type="submit" value="Submit"></div> 
+  </form>
+
+  <footer>
+    Multicloud with devops by VEERA
+  </footer>
+
+  <!-- Simple JavaScript for animation -->
+  <script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('mouseover', () => {
+      form.style.transform = 'scale(1.05)';
+    });
+
+    form.addEventListener('mouseout', () => {
+      form.style.transform = 'scale(1)';
+    });
+  </script>
+
+</body>
+</html>
