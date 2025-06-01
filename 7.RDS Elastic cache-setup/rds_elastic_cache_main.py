@@ -6,7 +6,7 @@ import sys            # To handle command-line arguments
 
 # 🔧 Redis configuration (ElastiCache endpoint)
 redis_client = redis.Redis(
-    host='veera-xibjly.serverless.use1.cache.amazonaws.com',  # Replace your ElastiCache Redis endpoint
+    host='dev-l6ap1d.serverless.use1.cache.amazonaws.com:6379',  # Replace your ElastiCache Redis endpoint
     port=6379,              # Default Redis port
     ssl=True,               # TLS enabled for AWS ElastiCache
     decode_responses=True, # Ensures Redis returns strings, not bytes
@@ -14,9 +14,9 @@ redis_client = redis.Redis(
 )
 
 # 🔧 RDS (MySQL) configuration
-RDS_HOST = 'rds-main.cno6u86ymx4c.us-east-1.rds.amazonaws.com'  # Replace your RDS endpoint
+RDS_HOST = 'database-1.c0n8k0a0swtz.us-east-1.rds.amazonaws.com'  # Replace your RDS endpoint
 RDS_USER = 'admin'           # MySQL username
-RDS_PASSWORD = 'srivardhan'  # MySQL password
+RDS_PASSWORD = '9959148343'  # MySQL password
 RDS_DB_NAME = 'test'         # Database name
 TABLE_NAME = 'users'         # Table name to query
 
