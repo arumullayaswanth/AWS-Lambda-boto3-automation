@@ -6,10 +6,10 @@ import sys            # To handle command-line arguments
 
 # 🔧 Redis configuration (ElastiCache endpoint)
 redis_client = redis.Redis(
-    host='dev-l6ap1d.serverless.use1.cache.amazonaws.com:6379',  # Replace your ElastiCache Redis endpoint
-    port=6379,              # Default Redis port
+    host='dev-l6ap1d.serverless.use1.cache.amazonaws.com',  # Removed port from host(removed the port from the host string and kept the port parameter separate)
+    port=6379,              # Default Redis port specified separately
     ssl=True,               # TLS enabled for AWS ElastiCache
-    decode_responses=True, # Ensures Redis returns strings, not bytes
+    decode_responses=True,  # Ensures Redis returns strings, not bytes
     socket_timeout=5        # Optional timeout in seconds
 )
 
