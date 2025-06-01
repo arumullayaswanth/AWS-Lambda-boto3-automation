@@ -2,6 +2,9 @@
 
 This guide will walk you through building a serverless web application using Amazon API Gateway, AWS Lambda, and Amazon DynamoDB.
 
+
+
+
 <table style="width: 100%; margin-bottom: 20px;">
   <tr>
     <td align="center" style="padding: 10px; background-color: #e9f7f5; border-radius: 8px;">
