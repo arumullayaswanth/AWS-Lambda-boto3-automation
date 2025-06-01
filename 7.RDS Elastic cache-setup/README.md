@@ -1,4 +1,15 @@
 # AWS RDS + ElastiCache (Redis) + EC2 Setup Guide
+
+
+<table style="width: 100%; margin-bottom: 20px;">
+  <tr>
+    <td align="center" style="padding: 10px; background-color: #e9f7f5; border-radius: 8px;">
+      <img src="https://github.com/arumullayaswanth/AWS-Lambda-boto3-automation-project/blob/ef852a6cb9c8f636a6e57c360b0ec6f33c5b057e/7.RDS%20Elastic%20cache-setup/rds_elastic_cache%20images.png" width="1000%" style="border: 2px solid #ddd; border-radius: 10px;">
+      <br><b> AWS RDS + ElastiCache (Redis) + EC2 Setup Guide </b>
+    </td>
+  </tr>
+</table>
+
 # AWS RDS and ElastiCache Setup with Python Cache Integration
  
 This guide provides detailed steps to set up an AWS environment with RDS (MySQL), ElastiCache (Redis), and EC2 for backend caching operations using Python.
