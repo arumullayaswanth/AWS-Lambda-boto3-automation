@@ -104,9 +104,12 @@ You should see the respective test messages.
 #### 🛠 Install NGINX
 
 ```bash
+sudo amazon-linux-extras enable nginx1
+sudo yum clean metadata
 sudo yum install nginx -y
 sudo systemctl enable nginx
 sudo systemctl start nginx
+
 ```
 
 #### 🔍 Verify Installation
