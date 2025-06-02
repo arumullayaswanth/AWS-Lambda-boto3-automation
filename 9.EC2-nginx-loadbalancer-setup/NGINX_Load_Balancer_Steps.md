@@ -195,31 +195,41 @@ http://<LOAD_BALANCER_PUBLIC_IP>
 
 
 
-[root@ip-172-31-91-19 ~]# history
-    1  sudo yum install httpd -y
-    2  sudo systemctl enable httpd
-    3  sudo yum install nginx -y
-    4  sudo systemctl enable nginx
-    5  sudo systemctl start nginx
-    6  systemctl status nginx
-    7  sudo yum install nginx -y
-    8  sudo systemctl enable nginx
-    9  sudo systemctl start nginx
-   10  sudo amazon-linux-extras enable nginx1
-   11  sudo yum clean metadata
-   12  sudo yum install nginx -y
-   13  sudo systemctl enable nginx
-   14  sudo systemctl start nginx
-   15  systemctl status nginx
-   16  sudo vi /etc/nginx/conf.d/loadbalancer.conf
-   17  sudo nginx -t
-   18  sudo systemctl reload nginx
-   19  sudo cat /etc/nginx/nginx.conf
-   20  sudo cat /etc/nginx/conf.d/default.conf
-   21  vim /etc/nginx/conf.d/default.conf
-   22  sudo systemctl restart nginx
-   23  sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
-   24  sudo cat /etc/nginx/conf.d/loadbalancer.conf
-   25  sudo nginx -t
-   26  sudo systemctl reload nginx
-   27  history
+# Nginx Installation and Configuration Command History
+
+```bash
+sudo yum install httpd -y
+sudo systemctl enable httpd
+
+sudo yum install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+systemctl status nginx
+
+sudo yum install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+
+sudo amazon-linux-extras enable nginx1
+sudo yum clean metadata
+sudo yum install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
+systemctl status nginx
+
+sudo vi /etc/nginx/conf.d/loadbalancer.conf
+sudo nginx -t
+sudo systemctl reload nginx
+
+sudo cat /etc/nginx/nginx.conf
+sudo cat /etc/nginx/conf.d/default.conf
+vim /etc/nginx/conf.d/default.conf
+
+sudo systemctl restart nginx
+
+sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
+sudo cat /etc/nginx/conf.d/loadbalancer.conf
+sudo nginx -t
+sudo systemctl reload nginx
+
+history
